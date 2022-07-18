@@ -1,0 +1,102 @@
+body.active {
+    overflow: hidden;
+}
+
+header {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu {
+        display: flex;
+        gap: 33px;
+        position: relative;
+
+        a {
+            text-transform: uppercase;
+            font-family: 'Inter';
+            font-size: 14px;
+            line-height: 17px;
+
+        }
+
+        .arrow {
+            position: relative;
+            padding-right: 17px;
+
+            &::before,
+            &::after {
+                content: '';
+                width: 7px;
+                height: 1px;
+                background-color: #000;
+                position: absolute;
+                top: 8px;
+            }
+
+            &::after {
+                transform: rotate(40deg);
+                right: 5px;
+            }
+
+            &::before {
+                transform: rotate(-40deg);
+                right: 0;
+            }
+        }
+
+        .sub-menu {
+            position: absolute;
+            background: rgb(161, 161, 161);
+            padding: 20px;
+            text-align: right;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: all 0.3s ease 0s;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 5;
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .sub-menu.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+            margin-top: 10px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        position: relative;
+
+        .input {
+            display: none;
+            position: absolute;
+            transition: all 0.3s ease 0s;
+            right: 80px;
+            padding: 5px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        .input.active {
+            display: block;
+        }
+    }
+
+    .burger {
+        display: none;
+    }
+}

@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>California</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -29,19 +30,47 @@
                 </ul>
             </nav>
             <div class="buttons">
-                <a href="#"><img src="./icons/header_icons/find.svg" alt=""></a>
+                <input type="search" class="input">
+                <a href="#"><img src="./icons/header_icons/find.svg" alt="" class="search"></a>
                 <a href="#"><img src="./icons/header_icons/buy.svg" alt=""></a>
             </div>
             <div class="burger"><span></span></div>
-
         </header>
 
         <main>
+            <section class="swiper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-info slider-item">
+                                <h1>The new phones are here take a look.</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
+                                    aliquam, tempor. Faucibus morbi turpis.
+                                </p>
+                                <a href="#" class="btn">Explore</a>
+                            </div>
+                            <div class="slide-image slider-item">
+                                <img src="./img/slider_photo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/categories/laptop.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/idea_photo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
         </main>
 
         <footer>
         </footer>
     </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

@@ -1,10 +1,8 @@
 @import url(/css/nullstyle.css);
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 10px;
+body.active {
+  overflow: hidden;
 }
 
 header {
@@ -63,7 +61,7 @@ header .menu .arrow::before {
 
 header .menu .sub-menu {
   position: absolute;
-  background: rgba(211, 211, 211, 0.486);
+  background: #a1a1a1;
   padding: 20px;
   text-align: right;
   opacity: 0;
@@ -80,6 +78,7 @@ header .menu .sub-menu {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 15px;
+  z-index: 5;
 }
 
 header .menu .sub-menu a:hover {
@@ -101,10 +100,96 @@ header .buttons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+header .buttons .input {
+  display: none;
+  position: absolute;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  right: 80px;
+  padding: 5px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+header .buttons .input.active {
+  display: block;
 }
 
 header .burger {
   display: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+h1 {
+  font-family: 'Readex Pro';
+  font-size: 58px;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-family: 'Inter';
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  padding: 15px 50px;
+  color: #000;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  display: inline-block;
+}
+
+.swiper-container {
+  background: #dce5e2;
+  border-radius: 50px;
+  padding: 100px 50px;
+}
+
+.swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-container .swiper-slide .slider-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  min-width: 0;
+}
+
+.swiper-container .swiper-slide .slide-info p {
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 30px;
+}
+
+.swiper-container .swiper-button-next::after,
+.swiper-container .swiper-button-prev::after {
+  color: #000;
+}
+
+.swiper-container .swiper-pagination-bullet {
+  width: 100px;
+  border-radius: 0;
+  height: 5px;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background: #000;
 }
 
 @media (max-width: 770px) {
@@ -122,13 +207,13 @@ header .burger {
   header .logo {
     position: absolute;
     left: 0;
-    z-index: 2;
+    z-index: 6;
   }
   header .buttons {
-    z-index: 2;
+    z-index: 6;
   }
   header .burger {
-    z-index: 5;
+    z-index: 6;
     display: block;
     position: relative;
     width: 30px;
@@ -190,7 +275,7 @@ header .burger {
   header .navbar .menu .arrow::after {
     background-color: #fff;
   }
-  header .navbar .menu::before {
+  header .navbar .menu.active::before {
     content: ' ';
     position: fixed;
     width: 100%;
@@ -198,7 +283,7 @@ header .burger {
     left: 0;
     height: 80px;
     background-color: #fff;
-    z-index: 2;
+    z-index: 6;
   }
   header .navbar .menu .sub-menu.active {
     position: relative;
