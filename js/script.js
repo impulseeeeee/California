@@ -46,5 +46,5 @@ new Swiper('.swiper-container', {
         onlyInViewport: true,
     },
     autoHeight: true,
-
+    variableWidth: true,
 })

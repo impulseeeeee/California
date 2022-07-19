@@ -1,0 +1,169 @@
+.categories {
+    margin: 50px 0;
+
+    img {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    span {
+        font-family: 'Inter';
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .sub-title {
+        max-width: 620px;
+        margin: 0 auto;
+    }
+
+    .product-types {
+        margin: 50px 0;
+        display: flex;
+        gap: 20px;
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .card {
+                padding: 0 40px;
+                text-align: right;
+            }
+
+            .laptop-card-info {
+                margin-bottom: 10px;
+            }
+
+            .watch-card {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .right-column {
+            display: flex;
+            gap: 20px;
+
+            .card {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 50px;
+                flex: 0 1 50%;
+            }
+
+            .phones-card-info,
+            .tablet-card-info {
+                margin: 0 40px;
+            }
+        }
+
+        .column {
+            flex: 0 1 50%;
+        }
+
+        .card {
+            box-shadow: (0px 4px 35px rgba(0, 0, 0, 0.25));
+        }
+
+    }
+}
+
+@media (max-width:1210px) {
+    .categories {
+        .product-types {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 1 auto;
+
+            .watch-card {
+                flex-direction: column;
+            }
+
+            .left-column {
+                gap: 20px;
+            }
+
+            .left-column .card {
+                min-width: 600px;
+            }
+
+            .right-column {
+                .card {
+                    padding: 30px 0;
+                    min-width: 290px;
+                    justify-content: space-between;
+                }
+
+                .tablet-card {
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:630px) {
+    .categories {
+        .product-types {
+            .left-column .card {
+                min-width: 450px;
+            }
+
+            .right-column .card {
+                padding: 30px 0;
+                min-width: 205px;
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .categories {
+        .product-types {
+            .left-column .card {
+                min-width: 400px;
+            }
+
+            .right-column {
+                .card {
+                    min-width: 190px;
+                }
+
+                .phones-card-info,
+                .tablet-card-info {
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:410px) {
+    .categories {
+        padding: 10px 0;
+
+        .product-types {
+            .left-column {
+                .card {
+                    min-width: 300px;
+                }
+            }
+
+            .right-column {
+                flex-wrap: wrap;
+
+                .card {
+                    min-width: 300px;
+
+                    img {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
