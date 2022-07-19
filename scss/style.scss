@@ -4,6 +4,7 @@
 @import '_header';
 @import '_swiper';
 @import '_categories';
+@import '_sell';
 
 
 .container {
@@ -35,6 +36,12 @@ h3 {
     font-family: 'Readex Pro';
     font-size: 32px;
     line-height: 38px;
+}
+
+h4 {
+    font-family: 'Readex Pro';
+    font-size: 22px;
+    line-height: 28px;
 }
 
 .sub-title {

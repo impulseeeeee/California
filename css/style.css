@@ -467,6 +467,75 @@ header .burger {
   }
 }
 
+.sell__items {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sell__items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  font-family: 'Inter';
+  gap: 10px;
+}
+
+.sell__items .item p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #4B4B4B;
+}
+
+.sell__items .item .price {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media (max-width: 900px) {
+  .sell__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px;
+  }
+  .sell__items .item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .sell__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px;
+  }
+  .sell__items .item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -496,6 +565,12 @@ h3 {
   font-family: 'Readex Pro';
   font-size: 32px;
   line-height: 38px;
+}
+
+h4 {
+  font-family: 'Readex Pro';
+  font-size: 22px;
+  line-height: 28px;
 }
 
 .sub-title {
