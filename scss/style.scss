@@ -7,10 +7,16 @@
 @import '_sell';
 @import '_best';
 @import '_ideas';
-
+@import '_input';
 
 .container {
     max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.inner {
+    max-width: 950px;
     margin: 0 auto;
     padding: 0 10px;
 }

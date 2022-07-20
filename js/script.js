@@ -23,13 +23,13 @@ if (burgerIcon) {
         menu.classList.toggle("active")
     })
 }
-
+/*
 let searchInput = document.querySelector('.input');
 let search = document.querySelector('.search');
 
 search.addEventListener("click", function (ev) {
     searchInput.classList.toggle("active");
-});
+});*/
 
 new Swiper('.swiper-container', {
     navigation: {
