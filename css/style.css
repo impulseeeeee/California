@@ -756,6 +756,7 @@ header .burger {
   background: #DCE5E2;
   border-radius: 16px;
   padding: 45px 10px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -853,6 +854,88 @@ header .burger {
   form {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
+  }
+}
+
+footer {
+  background: #F8F9FA;
+  padding: 30px 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .logo {
+  max-width: 300px;
+}
+
+footer .logo p {
+  text-align: left;
+}
+
+footer .logo img {
+  margin-left: 0;
+}
+
+footer .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+footer .column a {
+  font-family: 'Inter';
+  font-size: 17px;
+  line-height: 22px;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 25px;
+  }
+  footer .logo {
+    display: none;
+  }
+  footer .column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    gap: 30px;
+  }
+  footer .column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 }
 

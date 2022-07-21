@@ -13,12 +13,13 @@
 <body>
     <div class="container">
         <header>
-            <a href="#" class="logo"><img src="./icons/header_icons/logo.svg" alt=""></a>
+            <a href="#" class="logo">
+                <img src="./icons/header_icons/logo.svg" alt="company logo">
+            </a>
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="#">all products</a></li>
-                    <li>
-                        <a href="#" class="arrow">Solutions</a>
+                    <li><a href="#" class="arrow">Solutions</a>
                         <ul class="sub-menu">
                             <li><a href="#">Solution 1</a></li>
                             <li><a href="#">Solution 2</a></li>
@@ -31,12 +32,11 @@
             </nav>
             <div class="buttons">
                 <input type="search" class="input">
-                <a href="#"><img src="./icons/header_icons/find.svg" alt="" class="search"></a>
-                <a href="#"><img src="./icons/header_icons/buy.svg" alt=""></a>
+                <a href="#"><img src="./icons/header_icons/find.svg" alt="search icon" class="search"></a>
+                <a href="#"><img src="./icons/header_icons/buy.svg" alt="buy icon"></a>
             </div>
             <div class="burger"><span></span></div>
         </header>
-
         <main>
             <section class="swiper">
                 <div class="swiper-container">
@@ -44,20 +44,39 @@
                         <div class="swiper-slide">
                             <div class="slide-info slider-item">
                                 <h1>The new phones are here take a look.</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
-                                    aliquam, tempor. Faucibus morbi turpis.
-                                </p>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Scelerisque in est dui,
+                                    aliquam,
+                                    tempor. Faucibus morbi turpis. </p><a href="#" class="btn">Explore</a>
+                            </div>
+                            <div class="slide-image slider-item"><img src="./img/slider_photo.png" alt="phones photo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-info slider-item">
+                                <h1>The new laptops are here take a look.</h1>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Scelerisque in est dui,
+                                    aliquam,
+                                    tempor. Faucibus morbi turpis. </p>
                                 <a href="#" class="btn">Explore</a>
                             </div>
                             <div class="slide-image slider-item">
-                                <img src="./img/slider_photo.png" alt="">
+                                <img src="./img/categories/laptop.png" alt="laptop photo">
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/categories/laptop.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/idea_photo.png" alt="">
+                            <div class="slide-info slider-item">
+                                <h1>The new books are here take a look.</h1>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Scelerisque in est dui,
+                                    aliquam,
+                                    tempor. Faucibus morbi turpis. </p>
+                                <a href="#" class="btn">Explore</a>
+                            </div>
+                            <div class="slide-image slider-item">
+                                <img src="./img/idea_photo.png" alt="book photo">
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -65,83 +84,71 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </section>
-
             <section class="categories">
                 <h2>Shop our latest offers and categories</h2>
-                <p class="sub-title">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
-                    aliquam, tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <p class="sub-title">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Scelerisque in est dui,
+                    aliquam,
+                    tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. </p>
                 <div class="product-types">
                     <div class="left-column column">
-                        <div class="laptop-card card">
-                            <img src="./img/categories/laptop.png" alt="laptop photo">
-                            <div class="laptop-card-info">
-                                <span>Laptops</span>
+                        <div class="laptop-card card"><img src="./img/categories/laptop.png" alt="laptop photo">
+                            <div class="laptop-card-info"><span>Laptops</span>
                                 <h3>True Laptop Solution</h3>
                             </div>
                         </div>
-                        <div class="watch-card card">
-                            <img src="./img/categories/watch.png" alt="apple watch photo">
-                            <div class="watch-card-info">
-                                <span>Watch</span>
+                        <div class="watch-card card"><img src="./img/categories/watch.png" alt="apple watch photo">
+                            <div class="watch-card-info"><span>Watch</span>
                                 <h3>Not just stylisht</h3>
                             </div>
                         </div>
                     </div>
                     <div class="right-column column">
-                        <div class="phones-card card">
-                            <img src="./img/categories/phones.png" alt="iphone photo">
-                            <div class="phones-card-info">
-                                <span>Phones</span>
+                        <div class="phones-card card"><img src="./img/categories/phones.png" alt="iphone photo">
+                            <div class="phones-card-info"><span>Phones</span>
                                 <h3>Your day to day life</h3>
                             </div>
                         </div>
                         <div class="tablet-card card">
-                            <div class="tablet-card-info">
-                                <span>Tablet</span>
+                            <div class="tablet-card-info"><span>Tablet</span>
                                 <h3>Empower your work</h3>
-                            </div>
-                            <img src="./img/categories/tablet.png" alt="tablet photo">
+                            </div><img src="./img/categories/tablet.png" alt="tablet photo">
                         </div>
                     </div>
                 </div>
             </section>
-
             <section class="sell">
                 <h2>Save on our most selled items.</h2>
                 <p class="sub-title">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
                 <div class="sell__items">
-                    <div class="macbook-pro item">
-                        <img src="./img/sell/macbook_pro.png" alt="macbook-pro photo">
+                    <div class="macbook-pro item"><img src="./img/sell/macbook_pro.png" alt="macbook-pro photo">
                         <h4>MacBook Pro 13</h4>
-                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
-                        <span class="price">$ 1,200.00 USD</span>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p><span class="price">$
+                            1,
+                            200.00 USD</span>
                     </div>
-                    <div class="smart-watch item">
-                        <img src="./img/sell/smart_watch.png" alt="smart-watch photo">
+                    <div class="smart-watch item"><img src="./img/sell/smart_watch.png" alt="smart-watch photo">
                         <h4>Smart Galaxy Watch 3</h4>
-                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                            velit...</p>
-                        <span class="price">$ 199.00 USD</span>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                            consectetur,
+                            adipisci velit...</p><span class="price">$ 199.00 USD</span>
                     </div>
-                    <div class="macbook-air item">
-                        <img src="./img/sell/macbook_air.png" alt="macbook-air photo">
+                    <div class="macbook-air item"><img src="./img/sell/macbook_air.png" alt="macbook-air photo">
                         <h4>MacBook Air M1</h4>
-                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                            velit...</p>
-                        <span class="price">$ 1,009.00 USD</span>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                            consectetur,
+                            adipisci velit...</p><span class="price">$ 1,
+                            009.00 USD</span>
                     </div>
-                    <div class="ipad item">
-                        <img src="./img/sell/ipad.png" alt="ipad photo">
+                    <div class="ipad item"><img src="./img/sell/ipad.png" alt="ipad photo">
                         <h4>iPad</h4>
-                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                            velit...</p>
-                        <span class="price">$ 610.00 USD</span>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                            consectetur,
+                            adipisci velit...</p><span class="price">$ 610.00 USD</span>
                     </div>
                 </div>
             </section>
-
             <section class="best">
                 <h2>See the best around here</h2>
                 <p class="sub-title">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
@@ -150,82 +157,80 @@
                         <div class="item__info">
                             <p class="sub-title">Smart light bulb pack</p>
                             <h3>Latest and gratest</h3>
-                        </div>
-                        <a href="#" class="btn">Explore</a>
-                        <img src="./img/best/apple_watches.png" alt="watch-pack photo">
+                        </div><a href="#" class="btn">Explore</a><img src="./img/best/apple_watches.png"
+                            alt="watch-pack photo">
                     </div>
                     <div class="super-pack item">
                         <div class="item__info">
                             <p class="sub-title">Smart light bulb pack</p>
                             <h3>Best selling</h3>
-                        </div>
-                        <a href="#" class="btn">Explore</a>
-                        <img src="./img/best/super_pack.png" alt="super-pack photo">
+                        </div><a href="#" class="btn">Explore</a><img src="./img/best/super_pack.png"
+                            alt="super-pack photo">
                     </div>
                     <div class="laptop-pack item">
                         <div class="item__info">
                             <p class="sub-title">Smart light bulb pack</p>
                             <h3>Every product</h3>
-                        </div>
-                        <a href="#" class="btn">Explore</a>
-                        <img src="./img/best/macbook_&_iphone.png" alt="laptop-pack photo">
+                        </div><a href="#" class="btn">Explore</a><img src="./img/best/macbook_&_iphone.png"
+                            alt="laptop-pack photo">
                     </div>
                 </div>
             </section>
-
             <section>
                 <h2>Ideas have a place here</h2>
                 <p class="sub-title">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
-                <div class="ideas__content">
-                    <img src="./img/idea_photo.png" alt="book photo" class="content__photo item">
+                <div class="ideas__content"><img src="./img/idea_photo.png" alt="book photo"
+                        class="content__photo item">
                     <div class="content__text item">
-                        <p>We Make It Easy To Find The Great Design Talent, Easier...</p>
+                        <p>We Make It Easy To Find The Great Design Talent,
+                            Easier...</p>
                         <p>Road Design Handbook For The International Road...</p>
                         <p>The Best Kept Secrets About Creative People</p>
-                        <p>We Make It Easy To Find The Great Design Talent, Easier...</p>
+                        <p>We Make It Easy To Find The Great Design Talent,
+                            Easier...</p>
                     </div>
-                </div>
-                <a href="#" class="more">
-                    <span>See all</span>
-                    <img src="./icons/arrow_icon.svg" alt="arrow photo">
-                </a>
+                </div><a href="#" class="more"><span>See all</span><img src="./icons/arrow_icon.svg"
+                        alt="arrow photo"></a>
             </section>
-
             <section>
                 <div class="search-input">
-                    <h2>Looking for anything else?</h2>
-                    <input type="search" id="search" placeholder="Search keyboard">
-                    <div class="words">
-                        <a href="#" class="btn">iPhone</a>
-                        <a href="#" class="btn">Charger</a>
-                        <a href="#" class="btn">Gift</a>
-                        <a href="#" class="btn">Google Pixel 3</a>
-                        <a href="#" class="btn">Keyboard</a>
-                        <a href="#" class="btn">13 Pro Max</a>
-                        <a href="#" class="btn">iPhone 12</a>
-                        <a href="#" class="btn">Laptop</a>
-                        <a href="#" class="btn">Mobile</a>
-                    </div>
+                    <h2>Looking for anything else?</h2><input type="search" id="search" placeholder="Search keyboard">
+                    <div class="words"><a href="#" class="btn">iPhone</a><a href="#" class="btn">Charger</a><a href="#"
+                            class="btn">Gift</a><a href="#" class="btn">Google Pixel 3</a><a href="#"
+                            class="btn">Keyboard</a><a href="#" class="btn">13 Pro Max</a><a href="#" class="btn">iPhone
+                            12</a><a href="#" class="btn">Laptop</a><a href="#" class="btn">Mobile</a></div>
                 </div>
                 <div class="inner">
                     <div class="email-input">
                         <h2>Never miss a thing</h2>
-                        <p class="sub-title">
-                            Sign up for texts to be notified about our best offers on the perfect gifts.
-                        </p>
-                        <img src="./img/sign_up.png" alt="devices photo">
-                        <form>
-                            <input type="email" id="email-sign" placeholder="Your email">
-                            <button type="submit" id="submit-btn">Sign up</button>
-                        </form>
+                        <p class="sub-title">Sign up for texts to be notified about our best offers on the perfect
+                            gifts. </p><img src="./img/sign_up.png" alt="devices photo">
+                        <form><input type="email" id="email-sign" placeholder="Your email"><button type="submit"
+                                id="submit-btn">Sign up</button></form>
                     </div>
                 </div>
             </section>
         </main>
-
-        <footer>
-        </footer>
     </div>
+    <footer>
+        <div class="logo column"><img src="./icons/header_icons/logo.svg" alt="company logo">
+            <p class="sub-title">Sign up for texts to be notified about our best offers on the perfect gifts.</p>
+        </div>
+        <div class="products column"><a href="#">
+                <h4>All products</h4>
+            </a><a href="#">Phones</a><a href="#">Watch</a><a href="#">Tablet</a><a href="#">Laptops</a></div>
+        <div class="company column"><a href="#">
+                <h4>Company</h4>
+            </a><a href="#">About</a><a href="#">Support</a></div>
+        <div class="support column"><a href="#">
+                <h4>Support</h4>
+            </a><a href="#">Style Guide</a><a href="#">Licensing</a><a href="#">Change Log</a><a href="#">Contact</a>
+        </div>
+        <div class="follow column"><a href="#">
+                <h4>Follow Us</h4>
+            </a><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">LinkedIn</a><a href="#">Youtube</a>
+        </div>
+    </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
