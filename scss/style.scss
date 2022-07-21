@@ -27,18 +27,18 @@ body {
 }
 
 h1 {
+    margin-bottom: 20px;
     font-family: 'Readex Pro';
     font-size: 58px;
     line-height: 70px;
-    margin-bottom: 20px;
 }
 
 h2 {
+    margin-bottom: 10px;
     font-family: 'Readex Pro';
     font-size: 42px;
     line-height: 52px;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 h3 {
@@ -61,15 +61,15 @@ h4 {
 }
 
 .btn {
+    padding: 15px 50px;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 200px;
     font-family: 'Inter';
     font-size: 18px;
     line-height: 22px;
     text-transform: capitalize;
-    padding: 15px 50px;
     color: #000;
-    border: 1px solid #000000;
-    border-radius: 200px;
-    display: inline-block;
 }
 
 @media (max-width:500px) {

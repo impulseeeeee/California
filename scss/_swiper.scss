@@ -1,7 +1,7 @@
 .swiper-container {
+    padding: 100px 50px;
     background: rgb(220, 229, 226);
     border-radius: 50px;
-    padding: 100px 50px;
 
     .swiper-slide {
         display: flex;
@@ -14,10 +14,10 @@
 
         .slide-info {
             p {
+                margin-bottom: 30px;
                 font-family: 'Inter';
                 font-size: 16px;
                 line-height: 19px;
-                margin-bottom: 30px;
             }
         }
     }
@@ -29,8 +29,8 @@
 
     .swiper-pagination-bullet {
         width: 100px;
-        border-radius: 0;
         height: 5px;
+        border-radius: 0;
     }
 
     .swiper-pagination-bullet-active {

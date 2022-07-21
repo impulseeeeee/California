@@ -47,12 +47,12 @@
             gap: 20px;
 
             .card {
-                text-align: center;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 gap: 50px;
                 flex: 0 1 50%;
+                text-align: center;
             }
 
             .phones-card-info,
@@ -75,9 +75,9 @@
 @media (max-width:1210px) {
     .categories {
         .product-types {
+            margin: 1 auto;
             flex-wrap: wrap;
             justify-content: center;
-            margin: 1 auto;
 
             .watch-card {
                 flex-direction: column;

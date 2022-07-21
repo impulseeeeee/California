@@ -61,15 +61,13 @@ header .menu .arrow::before {
 
 header .menu .sub-menu {
   position: absolute;
-  background: #F8F9FA;
   padding: 20px;
-  text-align: right;
+  z-index: 5;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,7 +76,9 @@ header .menu .sub-menu {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 15px;
-  z-index: 5;
+  border-radius: 10px;
+  background: #F8F9FA;
+  text-align: right;
 }
 
 header .menu .sub-menu a:hover {
@@ -86,13 +86,14 @@ header .menu .sub-menu a:hover {
 }
 
 header .menu .sub-menu.active {
+  margin-top: 10px;
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-  margin-top: 10px;
 }
 
 header .buttons {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,16 +101,15 @@ header .buttons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 header .buttons .input {
+  right: 80px;
+  padding: 5px;
   display: none;
   position: absolute;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  right: 80px;
-  padding: 5px;
   border: 2px solid #000;
   border-radius: 10px;
   font-size: 18px;
@@ -128,12 +128,12 @@ header .burger {
     max-width: 680px;
   }
   header {
+    position: relative;
+    z-index: 1000;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     gap: 20px;
-    position: relative;
-    z-index: 1000;
   }
   header .logo {
     position: absolute;
@@ -183,11 +183,11 @@ header .burger {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
     padding: 100px 30px 30px 30px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
   }
   header .navbar .menu {
     display: -webkit-box;
@@ -208,26 +208,26 @@ header .burger {
   }
   header .navbar .menu.active::before {
     content: ' ';
+    z-index: 6;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     height: 80px;
     background-color: #fff;
-    z-index: 6;
   }
   header .navbar .menu .sub-menu.active {
     position: relative;
-    text-align: left;
     top: 10px;
     background-color: #656565;
+    text-align: left;
   }
 }
 
 .swiper-container {
+  padding: 100px 50px;
   background: #dce5e2;
   border-radius: 50px;
-  padding: 100px 50px;
 }
 
 .swiper-container .swiper-slide {
@@ -247,10 +247,10 @@ header .burger {
 }
 
 .swiper-container .swiper-slide .slide-info p {
+  margin-bottom: 30px;
   font-family: 'Inter';
   font-size: 16px;
   line-height: 19px;
-  margin-bottom: 30px;
 }
 
 .swiper-container .swiper-button-next::after,
@@ -260,8 +260,8 @@ header .burger {
 
 .swiper-container .swiper-pagination-bullet {
   width: 100px;
-  border-radius: 0;
   height: 5px;
+  border-radius: 0;
 }
 
 .swiper-container .swiper-pagination-bullet-active {
@@ -356,7 +356,6 @@ header .burger {
 }
 
 .categories .product-types .right-column .card {
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,6 +370,7 @@ header .burger {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+  text-align: center;
 }
 
 .categories .product-types .right-column .phones-card-info,
@@ -391,12 +391,12 @@ header .burger {
 
 @media (max-width: 1210px) {
   .categories .product-types {
+    margin: 1 auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 1 auto;
   }
   .categories .product-types .watch-card {
     -webkit-box-orient: vertical;
@@ -489,8 +489,8 @@ header .burger {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
-  font-family: 'Inter';
   gap: 10px;
+  font-family: 'Inter';
 }
 
 .sell__items .item p {
@@ -545,8 +545,6 @@ header .burger {
 }
 
 .best__items .item {
-  background: #F8F9FA;
-  border-radius: 16px;
   padding: 40px 70px 0 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,6 +561,8 @@ header .burger {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  border-radius: 16px;
+  background: #F8F9FA;
 }
 
 @media (max-width: 1200px) {
@@ -610,10 +610,10 @@ header .burger {
 }
 
 .ideas__content p {
+  margin-top: 20px;
   font-family: 'Inter';
   font-size: 24px;
   line-height: 30px;
-  margin-top: 20px;
 }
 
 .ideas__content img {
@@ -707,19 +707,19 @@ header .burger {
 }
 
 .search-input #search {
+  min-width: 50%;
+  padding: 20px 70px;
+  margin-bottom: 20px;
   background-image: url("/icons/input_search.svg");
   background-position: 15px center;
   background-repeat: no-repeat;
   background-color: #F8F9FA;
   border: 1px solid #C5C5C5;
   border-radius: 100px;
-  padding: 20px 70px;
   font-family: 'Inter';
   font-size: 20px;
   line-height: 17px;
-  min-width: 50%;
   color: #000;
-  margin-bottom: 20px;
 }
 
 .search-input #search::-webkit-input-placeholder {
@@ -967,18 +967,18 @@ body {
 }
 
 h1 {
+  margin-bottom: 20px;
   font-family: 'Readex Pro';
   font-size: 58px;
   line-height: 70px;
-  margin-bottom: 20px;
 }
 
 h2 {
+  margin-bottom: 10px;
   font-family: 'Readex Pro';
   font-size: 42px;
   line-height: 52px;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 h3 {
@@ -1001,15 +1001,15 @@ h4 {
 }
 
 .btn {
+  padding: 15px 50px;
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 200px;
   font-family: 'Inter';
   font-size: 18px;
   line-height: 22px;
   text-transform: capitalize;
-  padding: 15px 50px;
   color: #000;
-  border: 1px solid #000000;
-  border-radius: 200px;
-  display: inline-block;
 }
 
 @media (max-width: 500px) {
