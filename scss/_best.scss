@@ -39,14 +39,14 @@
     }
 }
 
-@media (max-width:900px) {
+@media (max-width:640px) {
     .best {
         &__items {
             flex-wrap: wrap;
             justify-content: center;
 
             .item {
-                flex: 0 1 100%;
+                flex: 0 1 90%;
             }
         }
     }

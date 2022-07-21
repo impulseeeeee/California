@@ -62,4 +62,17 @@
             font-size: 20px;
         }
     }
+
+    .more {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width:500px) {
+    .ideas__content {
+        p {
+            margin-top: 8px;
+            font-size: 18px;
+        }
+    }
 }

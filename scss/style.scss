@@ -71,3 +71,25 @@ h4 {
     border-radius: 200px;
     display: inline-block;
 }
+
+@media (max-width:500px) {
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    h3 {
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
