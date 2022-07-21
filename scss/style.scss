@@ -1,6 +1,7 @@
-@import url(/css/nullstyle.css);
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import '_nullstyle';
+@import '_global';
 @import '_header';
 @import '_swiper';
 @import '_categories';
@@ -9,87 +10,3 @@
 @import '_ideas';
 @import '_input';
 @import '_footer';
-
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-.inner {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-body {
-    color: #000000;
-}
-
-h1 {
-    margin-bottom: 20px;
-    font-family: 'Readex Pro';
-    font-size: 58px;
-    line-height: 70px;
-}
-
-h2 {
-    margin-bottom: 10px;
-    font-family: 'Readex Pro';
-    font-size: 42px;
-    line-height: 52px;
-    text-align: center;
-}
-
-h3 {
-    font-family: 'Readex Pro';
-    font-size: 32px;
-    line-height: 38px;
-}
-
-h4 {
-    font-family: 'Readex Pro';
-    font-size: 22px;
-    line-height: 28px;
-}
-
-.sub-title {
-    font-family: 'Readex Pro';
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-}
-
-.btn {
-    padding: 15px 50px;
-    display: inline-block;
-    border: 1px solid #000000;
-    border-radius: 200px;
-    font-family: 'Inter';
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: capitalize;
-    color: #000;
-}
-
-@media (max-width:500px) {
-    h1 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    h2 {
-        font-size: 30px;
-        line-height: 37px;
-    }
-
-    h3 {
-        font-size: 22px;
-        line-height: 27px;
-    }
-
-    h4 {
-        font-size: 18px;
-        line-height: 20px;
-    }
-}

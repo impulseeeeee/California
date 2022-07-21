@@ -1,11 +1,4 @@
 .categories {
-    margin: 50px 0;
-
-    img {
-        margin: 0;
-        max-width: 100%;
-    }
-
     span {
         font-family: 'Inter';
         font-size: 15px;
@@ -87,8 +80,10 @@
                 gap: 20px;
             }
 
-            .left-column .card {
-                min-width: 600px;
+            .left-column {
+                .card {
+                    min-width: 600px;
+                }
             }
 
             .right-column {
@@ -106,6 +101,9 @@
     }
 }
 
+
+
+
 @media (max-width:630px) {
     .categories {
         .product-types {
@@ -113,6 +111,7 @@
                 min-width: 450px;
             }
 
+            // todo 
             .right-column .card {
                 padding: 30px 0;
                 min-width: 205px;
@@ -124,6 +123,8 @@
 @media (max-width:500px) {
     .categories {
         .product-types {
+
+            // todo
             .left-column .card {
                 min-width: 400px;
             }
@@ -159,6 +160,7 @@
                 .card {
                     min-width: 300px;
 
+                    // ? img
                     img {
                         margin: 0 auto;
                     }

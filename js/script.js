@@ -22,16 +22,18 @@ if (burgerIcon) {
         document.body.classList.toggle("active");
         menu.classList.toggle("active");
     });
-}
+};
+
 /*
 let searchInput = document.querySelector('.input');
 let search = document.querySelector('.search');
 
-search.addEventListener("click", function () {
+search.addEventListener("click", () => {
     searchInput.classList.toggle("active");
-});*/
+});
+*/
 
-new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'

@@ -1,5 +1,5 @@
 .ideas__content {
-    margin: 50px 0;
+    margin: 30px 0;
     display: flex;
     gap: 30px;
 
@@ -24,6 +24,14 @@
     gap: 5px;
     align-items: center;
     justify-content: center;
+
+    &:hover {
+        text-decoration: underline;
+
+        img {
+            margin-bottom: 5px;
+        }
+    }
 
     span {
         font-family: 'Inter';
