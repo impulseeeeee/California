@@ -120,6 +120,7 @@ header {
 
         .buttons {
             z-index: 6;
+            gap: 10px;
         }
 
         .burger {
@@ -145,7 +146,7 @@ header {
                 transition: all 0.3s ease 0s;
                 background-color: #000;
             }
-            
+
             &::before {
                 top: 0;
             }

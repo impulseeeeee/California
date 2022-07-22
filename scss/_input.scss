@@ -75,12 +75,6 @@
             border: 1px solid #000000;
             border-radius: 54px 0px 0px 54px;
 
-
-            &:hover,
-            &:focus {
-                border: 2px solid #000000;
-            }
-
             &::placeholder {
                 color: #000;
             }
@@ -95,6 +89,7 @@
             &:hover {
                 background: #fefefe;
                 border: 1px solid #000000;
+                border-left: none;
                 color: #000;
                 font-weight: 700;
             }

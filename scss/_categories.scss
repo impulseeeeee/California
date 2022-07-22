@@ -15,6 +15,15 @@
         display: flex;
         gap: 20px;
 
+        .card {
+            background: #fefefe;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+
         .left-column {
             display: flex;
             flex-direction: column;
